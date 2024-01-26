@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>home</title>
 </head>
-<body>
+<style>
+     body { 
+     background: linear-gradient(rgb(255, 255, 255), rgb(176, 246, 250)) fixed;
+    }
     
+.top-menu {
+  background: rgba(0, 26, 255, 0.318);
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  padding: 20px;
+}
+.top-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar-logo {display: inline-block;}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.menu-main li {display: inline-block;}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 61px;
+  padding-left: 20px;
+  font-size: 22px;
+  letter-spacing: 3px;
+  font-family: 'chicago';
+  font-weight: bold;
+  color: rgb(250, 250, 254);
+  transition:.3s linear;
+}
+.gain-center{
+  transition: 1s; /* Время эффекта */
+  text-align: center; 
+}
+.gain-center:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+</style>
+<body style>
+    <nav class="top-menu">
+        <a class="navbar-logo"></a>
+        <ul class="menu-main">
+          <li><a href="#" class="gain-center">О нас</a></li>
+          <li><a href="#" class="gain-center">Продукты</a></li>
+          <li><a href="#" class="gain-center">Карьера</a></li>
+          <li><a href="#" class="gain-center">Новости</a></li>
+        </ul>
+      </nav>
 </body>
 </html>
