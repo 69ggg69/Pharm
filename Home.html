@@ -62,6 +62,9 @@
     /* Увеличиваем масштаб */
   }
   .wrapper {
+    position: relative;
+    top: 30px;
+    background-color: #1B3F5F;
     display: flex;
     justify-content: space-between;
 }
@@ -71,27 +74,27 @@
 }
 .sidebar {
   position: relative;
-    top: 170px;
-    width: 33%;
+    top: 45px;
+    width: 38%;
 }
   .block-text {
     position: relative;
-    top: 95px;
     width: 730px;
     font-family: 'CANDARA';
     font-size: 26px;
     font-weight: bold;
-    color: rgb(26, 136, 173);
+    color: rgb(255, 255, 255);
     transition: .3s linear;
     text-align: justify; 
     line-height: 1.5;
+    text-indent: 30px;
     text-transform: uppercase;
   }
   .hr1{
     position: relative;
-    top: 116px;
+    top: 10px;
     right: 15px;    
-    width: 770px;
+    width: 1500px;
     border: none; /* Убираем границу */
     background-color: rgb(255, 255, 255); /* Цвет линии */
     color: rgb(255, 255, 255); /* Цвет линии для IE6-7 */
@@ -99,9 +102,9 @@
    }
    .hr2{
     position: relative;
-    top: 70px;
+    top: -10px;
     right: 15px;    
-    width: 770px;
+    width: 1500px;
     border: none; /* Убираем границу */
     background-color: rgb(255, 255, 255); /* Цвет линии */
     color: rgb(255, 255, 255); /* Цвет линии для IE6-7 */
@@ -118,16 +121,22 @@
 }
 
 .carousel-item {
-    min-width: 90%;
+    min-width: 100%;
     transition: opacity 0.5s ease;
 }
 .curveWrap {
+    position: relative;
     width: 100%;
-    height: 100px;
+    height: 110px;
 }
 .curveWrap .curve {
 stroke-linecap: round;
     stroke-opacity: 0.7;
+}
+svg {
+  position: relative;
+  height: 260px;
+  overflow: visible;
 }
 .curveWrap .curve path {
     transform-origin: center;
@@ -145,19 +154,19 @@ stroke-linecap: round;
     stroke: #BFE2FF;
 }
 .curveWrap .curve path:nth-child(1) {
-    stroke-width: 24;
+    stroke-width: 20;
     animation: curve 35s linear 1.4s infinite;
 }
 .curveWrap .curve path:nth-child(2) {
-    stroke-width: 21;
+    stroke-width: 17;
     animation: curve 35s linear 2.8s infinite;
 }
 .curveWrap .curve path:nth-child(3) {
-    stroke-width: 48;
+    stroke-width: 44;
     animation: curve 35s linear 4.2s infinite;
 }
 .curveWrap .curve path:nth-child(4) {
-    stroke-width: 41;
+    stroke-width: 37;
     animation: curve 35s linear 5.6s infinite;
 }
  
@@ -179,6 +188,7 @@ stroke-linecap: round;
 </style>
 
 <body style>
+ 
   <nav class="top-menu">
     <a class="navbar-logo" href="https://youtube.com/shorts/WxZ7QmpUhaM?si=fBGxZbFnMzQ0D-jU">
       <img src="./src/logo_new3.png" width="405" height="70"></a>
@@ -188,24 +198,14 @@ stroke-linecap: round;
       <li><a href="#" class="gain-center">Карьера</a></li>
       <li><a href="#" class="gain-center">Новости</a></li>
     </ul>
-    <div class="curveWrap">
-      <svg width="100%" height="100%" viewBox="0 0 1200 100" xmlns="http://www.w3.org/2000/svg">
-          <g class="curve" fill="none">
-              <path d="M 0, 60 S 300, -60, 600, 60, 800, -120, 1200 60" />
-              <path d="M 0, 60 S 200, -60, 400, 60, 900, -120, 1200 60" />
-              <path d="M 0, 60 S 200, -70, 400, 70, 800, -120, 1200 60" />
-              <path d="M 0, 60 S 200, -60, 400, 80, 600, -120, 1200 60" />
-          </g>
-      </svg>
-  </div>
     <div class="wrapper">
       <div class="content">
         <hr class="hr1">
       <p class="block-text">
         Уже более 75 лет компания занимает стабильное положение на рынке химико-фармацевтической промышленности.
         Компания имеет многолетний и успешный опыт сотрудничества в области контрактного производства.
-      </br>
-      </br>
+      </p>
+      <p class="block-text">
         Непрерывный процесс обеспечения и контроля качества на каждой технологической стадии гарантирует высокое
         качество готового продукта и эффективность производственного процесса.
       </p>
@@ -215,16 +215,16 @@ stroke-linecap: round;
           <div class="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item">
-                    <img src="./src/photo1705547034.jpeg"  width="430px" height="270px" alt="Image 1">
+                    <img src="./src/photo1705547034.jpeg"  width="510px" height="355px" alt="Image 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="./src/photo1705547057.jpeg"  width="430px" height="270px" alt="Image 2">
+                    <img src="./src/photo1705547057.jpeg"  width="510px" height="355px" alt="Image 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="./src/photo1705547150.jpeg"  width="430px" height="270px" alt="Image 3">
+                    <img src="./src/photo1705547150.jpeg"  width="510px" height="355px" alt="Image 3">
                 </div>
                 <div class="carousel-item">
-                  <img src="./src/photo1705547188.jpeg" width="430px" height="270px" alt="Image 4">
+                  <img src="./src/photo1705547188.jpeg" width="500px" height="355px" alt="Image 4">
               </div>
             </div>
         </div>
@@ -232,9 +232,17 @@ stroke-linecap: round;
             
         </div>
     </div>
-    </div>
-
-   
+  </div>
+  <div class="curveWrap">
+    <svg width="100%" height="100%" viewBox="0 0 1200 100" >
+        <g class="curve" fill="none">
+          <path d="M 0, 60 S 300, -60, 600, 60, 800, -120, 1200 60" />
+          <path d="M 0, 60 S 200, -60, 400, 60, 900, -120, 1200 60" />
+          <path d="M 0, 60 S 200, -70, 400, 70, 800, -120, 1200 60" />
+          <path d="M 0, 60 S 200, -60, 400, 80, 600, -120, 1200 60" />
+        </g>
+    </svg>
+</div>
 </body>
 
 </html>
