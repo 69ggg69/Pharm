@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,136 +8,250 @@
 </head>
 <style>
     body {
-    background: linear-gradient(rgb(255, 255, 255), rgb(176, 246, 250)) fixed;
-  }
+        background: linear-gradient(rgb(255, 255, 255), rgb(176, 246, 250)) fixed;
+    }
 
-  .top-menu {
-    background-color: #1b3f5f00;
-    padding: 20px;
-  }
+    .top-menu {
+        background-color: #1b3f5f00;
+        padding: 20px;
+    }
 
-  .navbar-logo {
-    background-color: #1b3f5f00;
-    display: inline-block;
-  }
+    .navbar-logo {
+        background-color: #1b3f5f00;
+        display: inline-block;
+    }
 
-  .menu-main {
-    background-color: #1b3f5f00;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    float: right;
-  }
+    .menu-main {
+        background-color: #1b3f5f00;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: right;
+    }
 
-  .menu-main li {
-    background-color: #1b3f5f00;
-    display: inline-block;
-  }
+    .menu-main li {
+        background-color: #1b3f5f00;
+        display: inline-block;
+    }
 
-  .menu-main a {
-    background-color: #1b3f5f00;
-    text-decoration: none;
-    display: block;
+    .menu-main a {
+        background-color: #1b3f5f00;
+        text-decoration: none;
+        display: block;
+        position: relative;
+        line-height: 65px;
+        padding-left: 40px;
+        padding-right: 20px;
+        font-size: 33px;
+        letter-spacing: 2px;
+        font-family: 'chicago';
+        font-weight: bold;
+        text-shadow: 2px 2px 1px #d2d1d5;
+        color: rgb(31, 165, 210);
+        transition: .3s linear;
+    }
+
+    .gain-center {
+        transition: 1s;
+        /* Время эффекта */
+        text-align: center;
+    }
+
+    .gain-center:hover {
+        transform: scale(1.2);
+        /* Увеличиваем масштаб */
+    }
+
+    .wrapper {
+        position: relative;
+        top: 30px;
+        background-color: #1a4468;
+        display: flex;
+        justify-content: space-between;
+        min-width: 1522px;
+        left: -30px;
+    }
+
+    .leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 50px 7px 0; /* Отступы вокруг картинки */
+   }
+   .name {
+    float:left; /* Выравнивание по левому краю */
+    margin: 480px 2px 2px -350px;
+    font-family: 'CANDARA';
+        font-size: 22px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        /* transition: .3s linear;
+        text-align: justify;
+        line-height: 1.5;
+        text-indent: 30px; */
+   }
+   .job{
+    float:left; /* Выравнивание по левому краю */
+    margin: 510px 30px 20px -405px;
+    font-family: 'CANDARA';
+        font-size: 22px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+   }
+    .block-text {
+        position: relative;
+        left: 60px;
+        width: 1400px;
+        font-family: 'CANDARA';
+        font-size: 26px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        transition: .3s linear;
+        text-align: justify;
+        line-height: 1.5;
+        text-indent: 30px;
+    }
+
+    .hr1 {
+        position: relative;
+        top: 10px;
+        width: 1522px;
+        border: none;
+        /* Убираем границу */
+        background-color: rgb(255, 255, 255);
+        /* Цвет линии */
+        color: rgb(255, 255, 255);
+        /* Цвет линии для IE6-7 */
+        height: 5px;
+        /* Толщина линии */
+    }
+
+    .hr2 {
+        position: relative;
+        top: -10px;
+        width: 1522px;
+        border: none;
+        /* Убираем границу */
+        background-color: rgb(255, 255, 255);
+        /* Цвет линии */
+        color: rgb(255, 255, 255);
+        /* Цвет линии для IE6-7 */
+        height: 5px;
+        /* Толщина линии */
+    }
+    footer {
+    background-color:#1a4468;
+    color: #ffffff;
+    padding: 5px;
     position: relative;
-    line-height: 65px;
-    padding-left: 40px;
-    padding-right: 20px;
-    font-size: 33px;
-    letter-spacing: 2px;
-    font-family: 'chicago';
-    font-weight: bold;
-    text-shadow: 2px 2px 1px #d2d1d5;
-    color: rgb(31, 165, 210);
-    transition: .3s linear;
+    min-width: 1522px;
+    max-height: 250px;
+left:  -1531px;    top: 1400px;
   }
-
-  .gain-center {
-    transition: 1s;
-    /* Время эффекта */
-    text-align: center;
-  }
-
-  .gain-center:hover {
-    transform: scale(1.2);
-    /* Увеличиваем масштаб */
-  }
-  .wrapper {
-    position: relative;
-    top: 30px;
-    background-color: #1a4468;
+  .container {
     display: flex;
     justify-content: space-between;
-    min-width: 1522px;
-    left: -30px;
-}
-
-.content {
-  position: relative;
-    width: 50%;
-    left: 30px;
-}
-.sidebar {
-  position: relative;
-    top: 45px;
-    width: 41%;
-}
-  .block-text {
-    position: relative;
-    width: 730px;
-    font-family: 'CANDARA';
-    font-size: 26px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    transition: .3s linear;
-    text-align: justify; 
-    line-height: 1.5;
-    text-indent: 30px;
-    text-transform: uppercase;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
   }
-  .hr1{
-    position: relative;
-    top: 10px;
-right: 30px;    
-width: 1521px;
-    border: none; /* Убираем границу */
-    background-color: rgb(255, 255, 255); /* Цвет линии */
-    color: rgb(255, 255, 255); /* Цвет линии для IE6-7 */
-    height: 5px; /* Толщина линии */
-   }
-   .hr2{
-    position: relative;
-    top: -10px;
-    right: 30px;    
-    width: 1521px;
-    border: none; /* Убираем границу */
-    background-color: rgb(255, 255, 255); /* Цвет линии */
-    color: rgb(255, 255, 255); /* Цвет линии для IE6-7 */
-    height: 5px; /* Толщина линии */
-   }
+  .footer-contacts {
+    flex: 1;
+  }
+  .footer-menu {
+    flex: 1;
+  }
+  .footer-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-menu ul li {
+    margin-bottom: 10px;
+  }
+  .footer-menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .footer-menu ul li a:hover {
+    text-decoration: underline;
+  }
 </style>
+
 <body>
     <nav class="top-menu">
-        <a class="navbar-logo" href="https://youtube.com/shorts/WxZ7QmpUhaM?si=fBGxZbFnMzQ0D-jU">
-          <img src="./src/logo_new3.png" width="405" height="70"></a>
+        <a class="navbar-logo" href="./Home.html">
+            <img src="./src/logo_new3.png" width="405" height="70"></a>
         <ul class="menu-main">
-          <li><a href="#" class="gain-center">О НАС</a></li>
-          <li><a href="#" class="gain-center">ПРОДУКТЫ</a></li>
-          <li><a href="#" class="gain-center">КАРЬЕРА</a></li>
-          <li><a href="#" class="gain-center">РАЗРАБОТКИ</a></li>
+            <li><a href="#" class="gain-center">О НАС</a></li>
+            <li><a href="#" class="gain-center">ПРОДУКТЫ</a></li>
+            <li><a href="#" class="gain-center">КАРЬЕРА</a></li>
+            <li><a href="#" class="gain-center">РАЗРАБОТКИ</a></li>
         </ul>
         <div class="wrapper">
             <div class="content">
-              <hr class="hr1">
-            <p class="block-text">
-              Уже более 75 лет компания занимает стабильное положение на рынке химико-фармацевтической промышленности.
-              Компания имеет многолетний и успешный опыт сотрудничества в области контрактного производства.
-            </p>
-            <p class="block-text">
-              Непрерывный процесс обеспечения и контроля качества на каждой технологической стадии гарантирует высокое
-              качество готового продукта и эффективность производственного процесса.
-            </p>
-          <hr class="hr2">
-          </div>
-              <div class="sidebar">
+                <hr class="hr1">
+                <p class="block-text"><img src="./src/photo1706515355.jpeg" width="432" height="574" class="leftimg">
+                    Развитие компании направлено на освоение выпуска новых лекарственных препаратов и оптимизацию
+                    существующих технологий.
+                </p>
+                <p class="name">
+                    Жулина Татьяна Юрьевна
+                </p>
+                <p class="job">
+                    Заместитель директора по технологии
+                </p>
+                <p class="block-text">
+                    Разработку технологии новых препаратов компания ведет собственными силами в лаборатории
+                    технологической разработки (ЛТР), специалисты которой имеют большой опыт в разработке технологии
+                    производства новых лекарственных препаратов. Лаборатория оснащена всем необходимым технологическим
+                    оборудованием для наработки экспериментальных серий лекарственных препаратов.
+                </p>
+                <p class="block-text">
+                    Разработку и валидацию аналитических методик контроля качества новых лекарственных препаратов
+                    осуществляют специалисты Группы фармацевтической разработки Испытательного центра ОКК.
+                </p>
+                <p class="block-text">
+                    При организации контрактного производства специалисты данных подразделений и осуществляют трансфер
+                    технологии производства и аналитических методик.
+                </p>
+                <p class="block-text">
+                    Все разработки выполняются с применением современных подходов и высокотехнологичного лабораторного
+                    оборудования.
+                </p>
+                <p class="block-text">
+                    Лаборатория ИЦ ОКК оснащена аналитическими приборами ведущих мировых производителей, которые
+                    позволяют решать сложные задачи.
+                </p>
+                <p class="block-text">
+                    У нас создана команда высококвалифицированных специалистов: технологов и химиков, результатом работы
+                    которых является регистрация и внедрение в производство новых лекарственных препаратов - до 7
+                    наименований ежегодно.
+                </p>
+                <p class="block-text">
+                    ЛТР является исследовательской базой при проведении экспериментальных работ по оптимизации
+                    действующих технологических процессов, апробации новых видов сырья и материалов, что позволяет
+                    повышать эффективность производства, снижать себестоимость продукции, а также предприятию быть более
+                    гибким при изменении ситуации на фармацевтическом рынке.
+                </p>
+                <hr class="hr2">
+            </div>
+            <footer>
+                <div class="container">
+                  <div class="footer-contacts">
+                    <h3>Контакты</h3>
+                    <p>АО "Новосибхимфарм"</p>
+                    <p>630028, Россия, г. Новосибирск, ул. Декабристов, 275</p>
+                    <p>Телефон: +7 (383) 363-32-44</p>
+                    <p>Email: mail@nskpharm.ru</p>
+                  </div>
+                  <div class="footer-menu">
+                    <ul>
+                      <li><a href="/about">О нас</a></li>
+                      <li><a href="/products">Продукты</a></li>
+                      <li><a href="/career">Карьера</a></li>
+                      <li><a href="/news">Разработки</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </footer>
 </body>
+
 </html>
