@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>us</title>
+    <link rel="shortcut icon" href="./src/logo.png" type="image/png">
+</head>
+<style>
+    body {
+        background: linear-gradient(rgb(255, 255, 255), rgb(176, 246, 250)) fixed;
+    }
+
+    .top-menu {
+        background-color: #1b3f5f00;
+        padding: 20px;
+    }
+
+    .navbar-logo {
+        background-color: #1b3f5f00;
+        display: inline-block;
+    }
+
+    .menu-main {
+        background-color: #1b3f5f00;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: right;
+    }
+
+    .menu-main li {
+        background-color: #1b3f5f00;
+        display: inline-block;
+    }
+
+    .menu-main a {
+        background-color: #1b3f5f00;
+        text-decoration: none;
+        display: block;
+        position: relative;
+        line-height: 65px;
+        padding-left: 40px;
+        padding-right: 20px;
+        font-size: 33px;
+        letter-spacing: 2px;
+        font-family: 'chicago';
+        font-weight: bold;
+        text-shadow: 2px 2px 1px #d2d1d5;
+        color: rgb(31, 165, 210);
+        transition: .3s linear;
+    }
+
+    .gain-center {
+        transition: 1s;
+        /* Время эффекта */
+        text-align: center;
+    }
+
+    .gain-center:hover {
+        transform: scale(1.2);
+        /* Увеличиваем масштаб */
+    }
+
+    .wrapper {
+        position: relative;
+        top: 30px;
+        background-color: #1a4468;
+        display: flex;
+        justify-content: space-between;
+        min-width: 1522px;
+        left: -30px;
+    }
+
+    .leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 50px 7px 0; /* Отступы вокруг картинки */
+   }
+   .name {
+    float:left; /* Выравнивание по левому краю */
+    margin: 480px 2px 2px -350px;
+    font-family: 'CANDARA';
+        font-size: 22px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        /* transition: .3s linear;
+        text-align: justify;
+        line-height: 1.5;
+        text-indent: 30px; */
+   }
+   .job{
+    float:left; /* Выравнивание по левому краю */
+    margin: 510px 30px 20px -405px;
+    font-family: 'CANDARA';
+        font-size: 22px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+   }
+    .block-text {
+        position: relative;
+        left: 60px;
+        width: 1400px;
+        font-family: 'CANDARA';
+        font-size: 26px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        transition: .3s linear;
+        text-align: justify;
+        line-height: 1.5;
+        text-indent: 30px;
+    }
+
+    .hr1 {
+        position: relative;
+        top: 10px;
+        width: 1522px;
+        border: none;
+        /* Убираем границу */
+        background-color: rgb(255, 255, 255);
+        /* Цвет линии */
+        color: rgb(255, 255, 255);
+        /* Цвет линии для IE6-7 */
+        height: 5px;
+        /* Толщина линии */
+    }
+
+    .hr2 {
+        position: relative;
+        top: -10px;
+        width: 1522px;
+        border: none;
+        /* Убираем границу */
+        background-color: rgb(255, 255, 255);
+        /* Цвет линии */
+        color: rgb(255, 255, 255);
+        /* Цвет линии для IE6-7 */
+        height: 5px;
+        /* Толщина линии */
+    }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .workers-container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+        }
+
+        
+        .workers-container img {
+            width: 300px; 
+            height: 300px; 
+            transition: transform 0.3s ease-in-out; 
+        }
+
+       
+        .workers-container p {
+            text-align: center;
+        }
+
+       
+        .workers-container img:hover {
+            transform: scale(1.5);
+        }
+        
+        .certificate-container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+        }
+
+        
+        .certificate-container img {
+            width: 300px; 
+            height: 500px; 
+            transition: transform 0.3s ease-in-out; 
+        }
+
+       
+        .certificate-container p {
+            text-align: center;
+        }
+
+       
+        .certificate-container img:hover {
+            transform: scale(1.5);
+        }
+
+
+        .contacts-container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .contacts-container > div {
+        text-align: center;
+    }
+        
+        .contacts-container img {
+            width: 75px; 
+            height: 75px; 
+            transition: transform 0.3s ease-in-out; 
+        }
+
+       
+        .contacts-container p {
+            text-align: center;
+        }
+
+       
+        .contacts-container img:hover {
+            transform: scale(1.5);
+        }
+</style>
+
+<body>
+    <nav class="top-menu">
+        <a class="navbar-logo" href="./Home.html">
+            <img src="./src/logo_new3.png" width="405" height="70"></a>
+        <ul class="menu-main">
+            <li><a href="us.html" class="gain-center">О НАС</a></li>
+            <li><a href="products.html" class="gain-center">ПРОДУКТЫ</a></li>
+            <li><a href="career.html" class="gain-center">КАРЬЕРА</a></li>
+            <li><a href="#" class="gain-center">РАЗРАБОТКИ</a></li>
+        </ul>
+        <div>
+        <h1 style="font-size: 50px; color: #1a4468;" align="center">О компании</h1>
+
+        <p style="font-size: 20px; font-weight: 600;"><img src="./src/probirki.jpg" width="500" height="250" class="leftimg">
+            Сегодня, когда государственной политикой нашей страны является повышение конкурентоспособности отечественного производства, и все фармацевтическое сообщество сталкивается с проблемой обеспечения населения современными и качественными лекарственными средствами, мы гордимся нашим вкладом в развитие фармацевтической промышленности России.
+            Новосибирский химико-фармацевтический завод был создан 1942 г. на базе эвакуированных из Москвы химико-фармацевтических заводов – им. Н.А. Семашко и им. Л.Я. Карпова. 
+            <br></br>
+            В настоящий момент завод специализируется на выпуске ампульной продукции.
+            Численность персонала компании составляет порядка 500 сотрудников.
+            В 2013-2014 гг. была проведена реконструкция ампульного производства по самым современным стандартам.
+            В 2015 году компания получила Заключение о соответствии производителя лекарственных средств для медицинского применения требованиям Правил организации производства и контроля качества лекарственных средств.   
+        </p>
+        </div>
+        <h1 style="font-size: 50px; color: #1a4468;" align="center">Наши работники</h1>
+        <div class="workers-container">
+            <div>
+                <img src="./src/gendick.png " alt="ген директор">
+                <p>Генеральный директор <br> Лавриенко Дмитрий Владимирович</p>
+            </div>
+    
+            <div>
+                <img src="./src/photo1706515355.jpeg" alt="зам ген директора 3">
+                <p>Заместитель генерального директора по технологии <br> Жулина Татьяна Юрьевна</p>
+            </div>
+    
+            <div>
+                <img src="./src/person.png" alt="нач персонала">
+                <p>Начальник службы персонала <br> Левкова Елена Леонидовна</p>
+            </div>
+        </div>
+        <h1 style="font-size: 50px; color: #1a4468;" align="center">Сертификаты соответствия</h1>
+        <div class="certificate-container">
+            <div>
+                <img src="./src/diplom1.png ">
+                <p>Сертификат №1</p>
+            </div>
+    
+            <div>
+                <img src="./src/diplom 2.png">
+                <p>Сертификат №2</p>
+            </div>
+    
+            <div>
+                <img src="./src/diplom3.png">
+                <p>Сертификат №3</p>
+            </div>
+        </div>
+        <h1 style="font-size: 50px; color: #1a4468;" align="center">Наши Контакты</h1>
+        <div class="contacts">
+            <div class="map">
+                <h1 style="font-size: 30px; color: #1a4468;" align="center">Где нас найти</h1>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af213129d00d425411f8be734450f9998fafb67458d4a1262140fa0fdef8f6f5a&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <h1 style="font-size: 30px; color: #1a4468;" align="center">Связь с нами</h1>
+            
+            <div class="contacts-container">
+                <div>
+                    <img src="./src/phone logo.png" width="25" height="25">
+                    <p><a href="tel: +7 (383) 363-32-44"> +7 (383) 363-32-44</a></p>
+                    
+                </div>
+        
+                <div>
+                    <img src="./src/maplogo.png" width="25" height="25">
+                    <p>АО "Новосибхимфарм", 630028, Россия, г. Новосибирск, ул. Декабристов, 275</p>
+                </div>
+        
+                <div>
+                    <img src="./src/maillogo.png" width="25" height="25">
+                    <p><a href="mailto: mail@nskpharm.ru">mail@nskpharm.ru</a></p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+body {
+  background: linear-gradient(rgb(255, 255, 255), rgb(176, 246, 250)) fixed;
+}
+
+.top-menu {
+  background-color: #1b3f5f00;
+  padding: 20px;
+}
+
+.navbar-logo {
+  background-color: #1b3f5f00;
+  display: inline-block;
+}
+
+.menu-main {
+  background-color: #1b3f5f00;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.menu-main li {
+  background-color: #1b3f5f00;
+  display: inline-block;
+}
+
+.menu-main a {
+  background-color: #1b3f5f00;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 65px;
+  padding-left: 40px;
+  padding-right: 20px;
+  font-size: 33px;
+  letter-spacing: 2px;
+  font-family: 'chicago';
+  font-weight: bold;
+  text-shadow: 2px 2px 1px #d2d1d5;
+  color: rgb(31, 165, 210);
+  transition: .3s linear;
+}
+
+.gain-center {
+  transition: 1s;
+  /* Время эффекта */
+  text-align: center;
+}
+
+.gain-center:hover {
+  transform: scale(1.2);
+  /* Увеличиваем масштаб */
+}
+.wrapper {
+  position: relative;
+  top: 30px;
+  background-color: #1a4468;
+  display: flex;
+  justify-content: space-between;
+  min-width: 1522px;
+  left: -30px;
+}
+
+.content {
+position: relative;
+  width: 50%;
+  left: 30px;
+}
+.sidebar {
+position: relative;
+  top: 45px;
+  width: 41%;
+}
+.block-text {
+  position: relative;
+  width: 730px;
+  font-family: 'CANDARA';
+  font-size: 26px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  transition: .3s linear;
+  text-align: justify; 
+  line-height: 1.5;
+  text-indent: 30px;
+  text-transform: uppercase;
+}
+.hr1{
+  position: relative;
+  top: 10px;
+right: 30px;    
+width: 1521px;
+  border: none; /* Убираем границу */
+  background-color: rgb(255, 255, 255); /* Цвет линии */
+  color: rgb(255, 255, 255); /* Цвет линии для IE6-7 */
+  height: 5px; /* Толщина линии */
+ }
+ .hr2{
+  position: relative;
+  top: -10px;
+  right: 30px;    
+  width: 1521px;
+  border: none; /* Убираем границу */
+  background-color: rgb(255, 255, 255); /* Цвет линии */
+  color: rgb(255, 255, 255); /* Цвет линии для IE6-7 */
+  height: 5px; /* Толщина линии */
+ }
+ .carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  transition: opacity 0.5s ease;
+}
+.curveWrap {
+  position: relative;
+  width: 100%;
+  height: 110px;
+}
+.curveWrap .curve {
+stroke-linecap: round;
+  stroke-opacity: 0.7;
+}
+svg {
+position: relative;
+z-index: -2;
+height: 200px;
+overflow: visible;
+}
+.curveWrap .curve path {
+  transform-origin: center;
+}
+.curveWrap .curve path:nth-child(6n + 1) {
+  stroke: #3379B7;
+}
+.curveWrap .curve path:nth-child(6n + 2) {
+  stroke: #1B3F5F;
+}
+.curveWrap .curve path:nth-child(6n + 3) {
+  stroke: #67A1D5;
+}
+.curveWrap .curve path:nth-child(6n + 4) {
+  stroke: #BFE2FF;
+}
+.curveWrap .curve path:nth-child(1) {
+  stroke-width: 20;
+  animation: curve 35s linear 1.4s infinite;
+}
+.curveWrap .curve path:nth-child(2) {
+  stroke-width: 17;
+  animation: curve 35s linear 2.8s infinite;
+}
+.curveWrap .curve path:nth-child(3) {
+  stroke-width: 44;
+  animation: curve 35s linear 4.2s infinite;
+}
+.curveWrap .curve path:nth-child(4) {
+  stroke-width: 37;
+  animation: curve 35s linear 5.6s infinite;
+}
+
+@keyframes curve {
+  0% {
+      transform: rotateX(0deg) skewY(0deg);
+      stroke-opacity: 0.7;
+  }
+  50% {
+      transform: rotateX(360deg) skewY(8deg);
+      stroke-opacity: 1;
+  }
+  100% {
+      transform: rotateX(0deg) skewY(0deg);
+      stroke-opacity: 0.7;
+  }
+}
+footer {
+  background-color:#1a4468;
+  color: #ffffff;
+  padding: 5px;
+  position: relative;
+  min-width: 1522px;
+  left: -30px;
+  top: 90px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-contacts {
+  flex: 1;
+}
+.footer-menu {
+  flex: 1;
+}
+.footer-menu ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-menu ul li {
+  margin-bottom: 10px;
+}
+.footer-menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.vacancy-section {
+           padding: 20px;
+       }
+
+       .vacancy-section h2 {
+           font-size: 36px;
+           color: #3f51b5; /* Измените цвет заголовка по вашему вкусу */
+       }
+
+
+       .vacancy-section ul {
+           list-style: none;
+           padding: 0;
+           margin: 0;
+       }
+
+       .vacancy-section ul li {
+           font-size: 24px;
+           color: #333;
+           margin-bottom: 10px;
+       }
+
+       body{background: #edf2f7;}
+details{
+  display:block;
+  background: #fff;
+  width:400px;
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  overflow:hidden;
+  margin-bottom: 1.5rem;
+}
+summary::-webkit-details-marker{display:none;}
+summary::-moz-list-bullet{list-style-type:none;}
+summary::marker{display:none;} 
+summary {
+   display:block;
+   padding: .3em 1em .3em .9em;
+   border-bottom: 1px solid #e2e8f0;
+   font-size:1.4em;
+   cursor: pointer;
+   position: relative;
+}
+summary:before {  
+  top: .4em;
+  right: .3em;
+  color: transparent;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTYuNTkgOC41OUwxMiAxMy4xNyA3LjQxIDguNTkgNiAxMGw2IDYgNi02eiIvPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=") no-repeat 50% 50% / 1em 1em;
+  width: 1em;
+  height: 1em;  
+  content: "";
+  position: absolute;
+  transition: transform .5s;
+}
+details[open] > summary:before {
+  transform: scale(1,-1);
+}
+summary ~ * {
+   padding: 0 1em 10px 1.4em;
+}
+details[open] summary ~ *{ 
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
+summary:focus {
+  outline:0;
+  box-shadow: inset 0 0 1px rgba(0,0,0,0.3), inset 0 0 2px rgba(0,0,0,0.3);
+}
+
+.job{
+    float: left;
+    margin: 40px;
+}
+
+.wrapper1, .job {
+  display: block;
+
+}
+.wrapper1 {
+  position: relative;
+  top: 30px;
+  background-color: #1a4468;
+  display: flex;
+  justify-content: space-between;
+  min-width: 1522px;
+  left: -30px;
+  display: flex;
+  align-items: center;
+}
+.block-text1 {
+  position: relative;
+  width: 730px;
+  font-family: 'CANDARA';
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  transition: .3s linear;
+  text-align: justify; 
+  line-height: 1.5;
+  text-indent: 30px;
+  text-transform: uppercase;
+}

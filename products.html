@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <link rel="shortcut icon" href="./src/logo.png" type="image/png">
+</head>
+<style>
+    body {
+        background: linear-gradient(rgb(255, 255, 255), rgb(176, 246, 250)) fixed;
+    }
+
+    .top-menu {
+        background-color: #1b3f5f00;
+        padding: 20px;
+    }
+
+    .navbar-logo {
+        background-color: #1b3f5f00;
+        display: inline-block;
+    }
+
+    .menu-main {
+        background-color: #1b3f5f00;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: right;
+    }
+
+    .menu-main li {
+        background-color: #1b3f5f00;
+        display: inline-block;
+    }
+
+    .menu-main a {
+        background-color: #1b3f5f00;
+        text-decoration: none;
+        display: block;
+        position: relative;
+        line-height: 65px;
+        padding-left: 40px;
+        padding-right: 20px;
+        font-size: 33px;
+        letter-spacing: 2px;
+        font-family: 'chicago';
+        font-weight: bold;
+        text-shadow: 2px 2px 1px #d2d1d5;
+        color: rgb(31, 165, 210);
+        transition: .3s linear;
+    }
+
+    .gain-center {
+        transition: 1s;
+        /* Время эффекта */
+        text-align: center;
+    }
+
+    .gain-center:hover {
+        transform: scale(1.2);
+        /* Увеличиваем масштаб */
+    }
+
+    .wrapper {
+        position: relative;
+        top: 30px;
+        background-color: #1a4468;
+        display: flex;
+        justify-content: space-between;
+        min-width: 1522px;
+        left: -30px;
+    }
+
+    .leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 50px 7px 0; /* Отступы вокруг картинки */
+   }
+   .name {
+    float:left; /* Выравнивание по левому краю */
+    margin: 480px 2px 2px -350px;
+    font-family: 'CANDARA';
+        font-size: 22px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        /* transition: .3s linear;
+        text-align: justify;
+        line-height: 1.5;
+        text-indent: 30px; */
+   }
+   .job{
+    float:left; /* Выравнивание по левому краю */
+    margin: 510px 30px 20px -405px;
+    font-family: 'CANDARA';
+        font-size: 22px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+   }
+    .block-text {
+        position: relative;
+        left: 60px;
+        width: 1400px;
+        font-family: 'CANDARA';
+        font-size: 26px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        transition: .3s linear;
+        text-align: justify;
+        line-height: 1.5;
+        text-indent: 30px;
+    }
+
+    .hr1 {
+        position: relative;
+        top: 10px;
+        width: 1522px;
+        border: none;
+        /* Убираем границу */
+        background-color: rgb(255, 255, 255);
+        /* Цвет линии */
+        color: rgb(255, 255, 255);
+        /* Цвет линии для IE6-7 */
+        height: 5px;
+        /* Толщина линии */
+    }
+
+    .hr2 {
+        position: relative;
+        top: -10px;
+        width: 1522px;
+        border: none;
+        /* Убираем границу */
+        background-color: rgb(255, 255, 255);
+        /* Цвет линии */
+        color: rgb(255, 255, 255);
+        /* Цвет линии для IE6-7 */
+        height: 5px;
+        /* Толщина линии */
+    }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .workers-container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+        }
+
+        
+        .workers-container img {
+            width: 300px; 
+            height: 300px; 
+            transition: transform 0.3s ease-in-out; 
+        }
+
+       
+        .workers-container p {
+            text-align: center;
+        }
+
+       
+        .workers-container img:hover {
+            transform: scale(1.5);
+        }
+        
+        .certificate-container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+        }
+
+        
+        .certificate-container img {
+            width: 300px; 
+            height: 500px; 
+            transition: transform 0.3s ease-in-out; 
+        }
+
+       
+        .certificate-container p {
+            text-align: center;
+        }
+
+       
+        .certificate-container img:hover {
+            transform: scale(1.5);
+        }
+
+
+        .contacts-container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .contacts-container > div {
+        text-align: center;
+    }
+        
+        .contacts-container img {
+            width: 75px; 
+            height: 75px; 
+            transition: transform 0.3s ease-in-out; 
+        }
+
+       
+        .contacts-container p {
+            text-align: center;
+        }
+
+       
+        .contacts-container img:hover {
+            transform: scale(1.5);
+        }
+
+        body{
+        background-color:#ffcde4;
+        margin:0;
+        padding:0;
+        height:2000px;
+        direction:rtl
+      }
+      .bg-one,
+      .bg-one ~ .content span{
+      background-color:#363636;
+
+      }
+
+
+.tabs-box{
+  background-color: #3d4a60;
+  color:#FFF;
+  width:300px;
+  margin:40px auto;
+  box-shadow:0 0 10px rgba(0,0,0,.3)
+}
+.tabs-box .acord{
+ position:relative;
+ overflow:hidden;
+
+
+}
+.tabs-box .acord label{
+  position:relative;
+  z-index: 1000;
+  display:block;
+  padding:0 40px 0 0;
+}
+.tabs-box .acord label i{
+  display:block;
+  position:absolute;
+  top:0;
+  right:0;
+  width:40px;
+  text-align: center;
+}
+.tabs-box .acord label,
+.tabs-box .acord label i,
+.tabs-box .acord i.fa-chevron-circle-down{
+    height:40px;
+    line-height: 40px;
+}
+.tabs-box .acord i.fa-chevron-circle-down{
+  position:absolute;
+  z-index: 1111;
+  top:0;
+  left:0;
+  width: 40px;
+  text-align: center;
+  -moz-transition:all .2s linear 0s;
+  -webkit-transition:all .2s linear 0s;
+  transition:all .2s linear 0s;
+}
+
+.tabs-box .acord input{
+  display:none;
+}
+
+.tabs-box .content{
+  position:relative;
+  overflow:hidden;
+  -moz-transition:height 1s linear 0s;
+  -webkit-transition: height 1s linear 0s;
+  transition: height 1s linear 0s;
+  height:0;
+  font-size:14px;
+  line-height:22px;
+  color:#e4e4e4;
+  text-align:center;
+  direction:ltr
+}
+
+.tabs-box .content span.square{
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: -17px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+}
+.tabs-box input[type="checkbox"]:checked ~ div.content{
+  height:2020px;
+  padding:10px;
+}
+.tabs-box input[type="checkbox"]:checked ~ i.fa-chevron-circle-down{
+transform:rotate(180deg);
+}
+        
+</style>
+
+<body>
+    <nav class="top-menu">
+        <a class="navbar-logo" href="index.html">
+            <img src="./src/logo_new3.png" width="405" height="70"></a>
+        <ul class="menu-main">
+            <li><a href="./us.html" class="gain-center">О НАС</a></li>
+            <li><a href="./products.html" class="gain-center">ПРОДУКТЫ</a></li>
+            <li><a href="./career.html" class="gain-center">КАРЬЕРА</a></li>
+            <li><a href="./news.html" class="gain-center">РАЗРАБОТКИ</a></li>
+        </ul>
+        <div>
+        <h1 style="font-size: 50px; color: #1a4468;" align="center">Наши продукты</h1>
+        <br></br>
+        <p style="font-size: 23px; font-weight: 600;"><img src="./src/graph.jpeg" width="600" height="320" class="leftimg">
+            Фармацевтические препараты стали неотъемлемой частью современного здравоохранения.Они используются для лечения широкого спектра заболеваний и заболеваний, от простуды до опасных для жизни состояний.Использование фармацевтических препаратов позволило поставщикам медицинских услуг улучшить результаты пациентов, снизить уровень смертности и повысить общее качество жизни пациентов.Тем не менее, использование фармацевтических препаратов не без проблем и противоречий.
+            Фармацевтические препараты играют решающую роль в современном здравоохранении.Они используются для лечения широкого спектра заболеваний и заболеваний, от острых состояний, таких как инфекции и травмы, до хронических заболеваний, таких как диабет и сердечно -сосудистые заболевания.Фармацевтические препараты также используются в профилактической медицине, такой как вакцины, для предотвращения распространения инфекционных заболеваний.  
+        </p>
+        </div>
+        <br></br>
+        <h1 style="font-size: 50px; color: #1a4468;" align="center">Инъекционные препараты</h1>
+        <p style="font-size: 25px; color: #3f6c94;"><img src="./src/ampul.jpg" width="200" height="150" align="left" style="margin-right: 10px;">Госпитальные препараты различных фармакологических групп: витамины, обезболивающие и противовоспалительные средства, антигипертензивные лекарственные средства, антигистаминные лекарственные средства, ангиопротекторные лекарственные средства и другие...</p>
+        <br></br>
+        <h1 style="font-size: 50px; color: #1a4468;" align="center">Список производимых инъекционных препаратов</h1>
+        <div class="table">
+            <div class="tabs-box">
+                <div class="acord">
+                    <label for="tb-one" class="bg-one">
+                      <i class="fa fa-comments"></i>
+                      Список препаратов
+                    </label>
+                    <input type="checkbox" name="mytabs" id="tb-one">
+                    <i class="fa fa-chevron-circle-down"></i>
+                    <div class="content" >
+              <span class="square"></span>
+              <ol>
+                <li>Анальгин, раствор для внутривенного и внутримышечного введения 500 мг/мл</li>
+                <li>Ангиокардил®, раствор для инъекций 100 мг/мл
+
+                </li>
+                <li>Аскорбиновая кислота, раствор для внутривенного и внутримышечного введения 50 мг/мл
+
+                </li>
+                <li>Аскорбиновая кислота, раствор для внутривенного и внутримышечного введения 100 мг/мл
+
+                </li>
+                <li>Вода для инъекций, растворитель для приготовления лекарственных форм для инъекций
+
+                </li>
+                <li>Глюкоза, раствор для внутривенного введения 400 мг/мл
+
+                </li>
+                <li>Дибазол, раствор для внутривенного и внутримышечного введения 10 мг/мл
+
+                </li>
+                <li>Диклофенак, раствор для внутримышечного введения 25 мг/мл
+
+                </li>
+                <li>Димедрол, раствор для внутривенного и внутримышечного введения 10 мг/мл
+
+                </li>
+                <li>Калия хлорид, концентрат для приготовления раствора для инфузий 40 мг/мл
+
+                </li>
+                <li>Кальция глюконат стабилизированный раствор для внутривенного и внутримышечного введения 100 мг/мл
+
+                </li>
+                <li>Кетопрофен, раствор для внутривенного и внутримышечного введения 50 мг/мл
+
+                </li>
+                <li>Кеторолак, раствор для внутривенного и внутримышечного введения 30 мг/мл
+
+                </li>
+                <li>Ксантинола никотинат, раствор для внутривенного и внутримышечного введения 150 мг/мл
+
+                </li>
+                <li>Кордиамин, раствор для инъекций 250 мг/мл
+
+                </li>
+                <li>Лидокаин, раствор для инъекций 20 мг/мл
+
+                </li>
+                <li>Магния сульфат, раствор для внутривенного введения 250 мг/мл
+
+                </li>
+                <li>Максикаин®, раствор для инъекций 5 мг/мл
+
+                </li>
+                <li>Метоклопрамид, раствор для внутривенного и внутримышечного введения 5 мг/мл
+
+                </li>
+                <li>Натрия тиосульфат, раствор для внутривенного введения 300 мг/мл
+
+                </li>
+                <li>Натрия хлорид, раствор для инъекций 0,9%
+
+                </li>
+                <li>Неоскапан®, раствор для инъекций 20 мг/мл
+
+                </li>
+                <li>Новокаин, раствор для инъекций 5 мг/мл
+
+                </li>
+                <li>Ондансетрон, раствор для внутривенного и внутримышечного введения 2 мг/мл
+
+                </li>
+                <li>Папаверина гидрохлорид, раствор для инъекций 20 мг/мл
+
+                </li>
+                <li>Пентоксифиллин, раствор для внутривенного введения 20 мг/мл
+
+                </li>
+                <li>Пирацетам, раствор для внутривенного и внутримышечного введения 200 мг/мл
+
+                </li>
+                <li>Пиридоксин, раствор для инъекций 50 мг/мл
+
+                </li>
+                <li>Платифиллина гидротартрат, раствор для подкожного введения 2 мг/мл
+
+                </li>
+                <li>Прозерин, раствор для инъекций 0,5 мг/мл
+
+                </li>
+                <li>Проинин®, раствор для внутривенного и внутримышечного введения 50 мг/мл
+
+                </li>
+                <li>Протамина сульфат, раствор для внутривенного введения 10 мг/мл
+
+                </li>
+                <li>Рибоксин, раствор для внутривенного введения 20 мг/мл
+
+                </li>
+                <li>Стагемин®, раствор для внутривенного введения 50 мг/мл
+
+                </li>
+                <li>Суксаметония йодид, раствор для внутривенного и внутримышечного введения 20 мг/мл
+
+                </li>
+                <li>Тиамин, раствор для внутримышечного введения 50 мг/мл
+
+                </li>
+                <li>Унитиол, раствор для внутримышечного и подкожного введения 50 мг/мл
+
+                </li>
+                <li>Хлоропирамин, раствор для внутривенного и внутримышечного введения 20 мг/мл
+
+                </li>
+                <li>Цианокобаламин, раствор 200 мкг/мл
+
+                </li>
+                <li>Цианокобаламин, раствор 500 мкг/мл
+
+                </li>
+
+              </ol>
+                    </div>
+                </div>
+        </div>
+</body>
+
+</html>
